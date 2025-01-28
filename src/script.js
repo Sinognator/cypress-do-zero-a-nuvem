@@ -25,7 +25,7 @@ document.querySelector('button[type="submit"]')
     const helpRadio = document.querySelector('input[value="ajuda"]')
     const emailCheckbox = document.getElementById('email-checkbox')
     const phoneCheckbox = document.getElementById('phone-checkbox')
-    const fileField = document.querySelector('input[type="file"]')
+    const fileField = document.querySelector('input[type="filex"]')
     const successMessage = document.querySelector('.success')
     if (!firstNameField.value || !lastNameField.value || !emailField.value || !textareaField.value) {
       return showAndHideErrorMessage()
