@@ -152,7 +152,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     cy.get('a').invoke('removeAttr', 'target')
     cy.get('a').should('not.have.attr', 'target', '_blank')
     cy.get('a').click()
-    cy.contains('#title','CAC TAT -  Política de Privacidade').should('be.visible')
+    cy.contains('#title','CAC TAT - Política de Privacidade').should('be.visible')
   })
 
 })
