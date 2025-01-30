@@ -6,7 +6,8 @@
 
   "scripts": {
   "cy:open": "cypress open",
-  "test": "cypress run"
+  "test": "cypress run",
+  "test:clound": "cypress run --record"
   },
 
   "repository": {
