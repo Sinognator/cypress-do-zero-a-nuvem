@@ -38,3 +38,11 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', (data ={
     cy.contains('button', 'Enviar').click()
     
  })
+
+ Cypress.Commands.add('validateErrorMessage', () =>{
+    cy.clock()
+    cy.contains('button', 'Enviar').click()
+    cy.get('.error').should('be.visible').tick(3000)
+    cy.get('.error').should('not.be.visible')
+    
+ })
